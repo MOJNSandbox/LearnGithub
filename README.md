@@ -1,20 +1,25 @@
-# LearnGithub
+# MOJN Learns Git / GitHub!
+Feel free to add your own repository to this organization and use it to practice and experiment as you learn.
+
+## Sarah's slides
+Suggestions for improvement are welcome! And it's good GitHub practice. Source code is Git_Github_Intro.Rmd.
+https://mojnsandbox.github.io/LearnGithub/Git_Github_Intro.html
 
 ## Resources
-Online resources for users who are new to Github (or just need a refresher). Links are organized so that you can work through them in order. 
-- Intro to Github workflow
+Online resources for users who are new to Github (or just need a refresher). Links are organized with GitHub basics first and Git commands later.
+- Intro to GitHub workflow
   - https://guides.github.com/introduction/flow/
-- Hands-on Github practice
+- Hands-on GitHub practice
   - https://guides.github.com/activities/hello-world/
   - and/or: https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-repo/
     - When you create a repository, create it in the MOJNSandbox organization and name it [yourname]_hello_world
 - Pull request practice
   - https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-pullrequest/
-- Working locally with Github Desktop
+- Working locally with GitHub Desktop
   - https://kirstiejane.github.io/friendly-github-intro/exercises/working-locally/
-- Git/Github command line practice
+- Interactive Git/GitHub command line practice (super helpful)
   - https://try.github.io/levels/1/challenges/1
-- Git/Github tutorial for beginners, using command line
+- Git/GitHub tutorial for beginners, using command line
   - Clear explanation of how to use Git to track changes locally and then push changes up to a shared Github repository
   - http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
   
