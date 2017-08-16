@@ -1,7 +1,5 @@
 ---
-title: "Git / Github Intro"
-author: "Sarah E. Wright"
-date: "August 15, 2017"
+title: "Git / GitHub Intro"
 output: ioslides_presentation
 ---
 
@@ -10,13 +8,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Why?
-
 - Sort of like change tracking in Word or Google Docs
 - Collaborate without silently erasing someone else's work
 - Edit your own work while keeping the option to undo those edits
 
 ## Why?
-
 - The difference:
     - Code can break!
     - One project may involve many files
@@ -24,8 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - When we make modifications to working code, we want to be able to revert back to the working version if things go south
     - We also want to make sure that anyone who is using our code can still access the working version while we are making our updates
 
-## Git and Github
-
+## Git and GitHub
 - Git
     - Version control software
     - Installed locally on your computer
@@ -34,22 +29,30 @@ knitr::opts_chunk$set(echo = FALSE)
         - Master branch contains the most up-to-date working version of the project
         - Use other branches to develop new functionality
             - Merge changes back into master branch when you're sure they work
-- Github
+
+## Git and GitHub
+- GitHub
     - Website that hosts Git repositories
     - Lots of great collaboration features
     - Looks great on a resume!
 
 ## Git Workflow
 - Start a new project
-    - Initialize a local Git repository (`git init`)
-    - Add project files to your repository (`git add [filename]`)
+    - Initialize a local Git repository 
+        - `git init`
+    - Add project files to your repository
+        - `git add [filename]`
         - Can create files before or after initializing repo
 
 ## Git Workflow
 - Work on a project
-    - Create a new branch (`git branch [branch name]; git checkout [branch name]`)
-    - Work on project, commit changes, repeat (`git commit -m "[descriptive message]"`)
-    - When the code works, merge with master branch (`git checkout master; git merge [branch name]`)
+    - Create a new branch
+        - `git branch [branch name]`
+        - `git checkout [branch name]`
+    - Work on project, commit changes, repeat 
+        - `git commit -m "[descriptive message]"`
+    - When the code works, merge with master branch 
+        - `git checkout master; git merge [branch name]`
     - Repeat!
 
 ## Git Basics
@@ -57,6 +60,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Right click on project folder and select "Git Bash Here"
 
 ![](images/GitBashHere.png)
+
 ## Git Basics
 ### Initialize A Repository
 - `git init`
@@ -69,9 +73,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Git Basics
 ### Add Files To The Staging Area
-- `git add [filename]` adds a specific file
-- `git add *.R` adds all R files in the project folder
-- `git add *` adds all files in the project folder
+- `git add [filename]` 
+    - adds a specific file
+- `git add *.R` 
+    - adds all R files in the project folder
+- `git add *`
+    - adds all files in the project folder
 - Tells Git to track changes to these files
 
 ## Git Basics
@@ -106,10 +113,47 @@ knitr::opts_chunk$set(echo = FALSE)
 - `git reset --hard [commit]`
     - Undoes commits after `[commit]` and resets files to their state at that commit
 
-
+## GitHub Workflow
+- Start a new project
+    - Create remote repository on GitHub
+    - Initialize local repository, make an initial commit
+    - Set the GitHub repository as the remote repository where the local repository will be pushed
+    - Push changes in the local repository to GitHub
     
-## Git Basics
-### Rules of Thumb
+## GitHub Workflow
+- Work on a project
+    - Incorporate changes made by others into your local repository
+    - Work in your local repository as usual
+    - Frequently push changes to GitHub
+        - At minimum, push changes when you finish up for the day
+
+## GitHub Basics
+### Create a GitHub Repository
+
+![](images/NewRepository.png)
+
+## GitHub Basics
+### Set a GitHub Repository as the Default Remote Repository
+- `git remote add origin [GitHub repository URL]`
+    - Set the GitHub repository as the remote repository where the local repository will be pushed
+
+## GitHub Basics
+### Push Local Changes to GitHub Repository
+- `git push origin master`
+    - Push changes in local master branch to GitHub
+- `git push origin --all`
+    - Push changes in all local branches to GitHub
+- `git push origin [branch name]`
+    - Push changes in a specific branch to GitHub
+    
+## GitHub Basics
+### Sync Local Repository with GitHub Repository
+- `git fetch origin`
+    - Download the history of the GitHub repository
+- `git merge origin/master`
+    - Merge changes made to the GitHub repository with the current local branch
+
+## Rules of Thumb
 - One repository per project
     - Good: MOJN_IU_CalibrationAnalysis
     - Bad: MOJN_R_Code
@@ -120,4 +164,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## References
 
 https://jahya.net/blog/git-vs-github/
-https://git-scm.com/doc
+
+https://git-scm.com/
+
+https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
