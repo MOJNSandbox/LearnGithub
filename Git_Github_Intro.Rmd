@@ -49,7 +49,8 @@ knitr::opts_chunk$set(echo = FALSE)
     - Create a new branch
         - `git branch [branch name]`
         - `git checkout [branch name]`
-    - Work on project, commit changes, repeat 
+    - Work on project, stage files, commit changes, repeat 
+        - `git add [filename]`
         - `git commit -m "[descriptive message]"`
     - When the code works, merge with master branch 
         - `git checkout master; git merge [branch name]`

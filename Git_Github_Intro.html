@@ -10,7 +10,6 @@
 
 
 
-  <meta name="date" content="2017-08-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,14 +29,6 @@
 
       // Author information
       presenters: [
-            {
-        name:  'Sarah E. Wright' ,
-        company: '',
-        gplus: '',
-        twitter: '',
-        www: '',
-        github: ''
-      },
             ]
     };
   </script>
@@ -94,7 +85,6 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">August 15, 2017</p>
           </hgroup>
   </slide>
 
@@ -189,12 +179,17 @@
 <li><code>git branch [branch name]</code></li>
 <li><code>git checkout [branch name]</code></li>
 </ul></li>
-<li>Work on project, commit changes, repeat
+<li>Work on project, stage files, commit changes, repeat
 
 <ul>
+<li><code>git add [filename]</code></li>
 <li><code>git commit -m &quot;[descriptive message]&quot;</code></li>
 </ul></li>
-<li>When the code works, merge with master branch -<code>git checkout master; git merge [branch name]</code></li>
+<li>When the code works, merge with master branch
+
+<ul>
+<li><code>git checkout master; git merge [branch name]</code></li>
+</ul></li>
 <li>Repeat!</li>
 </ul></li>
 </ul>
