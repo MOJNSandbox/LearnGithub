@@ -1,0 +1,123 @@
+---
+title: "Git / Github Intro"
+author: "Sarah E. Wright"
+date: "August 15, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Why?
+
+- Sort of like change tracking in Word or Google Docs
+- Collaborate without silently erasing someone else's work
+- Edit your own work while keeping the option to undo those edits
+
+## Why?
+
+- The difference:
+    - Code can break!
+    - One project may involve many files
+- We need a way to take "snapshots" of our code at a given point in time
+- When we make modifications to working code, we want to be able to revert back to the working version if things go south
+    - We also want to make sure that anyone who is using our code can still access the working version while we are making our updates
+
+## Git and Github
+
+- Git
+    - Version control software
+    - Installed locally on your computer
+    - Tracks changes to files in your project directory (aka repository)
+    - Lets you create multiple "branches"
+        - Master branch contains the most up-to-date working version of the project
+        - Use other branches to develop new functionality
+            - Merge changes back into master branch when you're sure they work
+- Github
+    - Website that hosts Git repositories
+    - Lots of great collaboration features
+    - Looks great on a resume!
+
+## Git Workflow
+- Start a new project
+    - Initialize a local Git repository (`git init`)
+    - Add project files to your repository (`git add [filename]`)
+        - Can create files before or after initializing repo
+
+## Git Workflow
+- Work on a project
+    - Create a new branch (`git branch [branch name]; git checkout [branch name]`)
+    - Work on project, commit changes, repeat (`git commit -m "[descriptive message]"`)
+    - When the code works, merge with master branch (`git checkout master; git merge [branch name]`)
+    - Repeat!
+
+## Git Basics
+### Open Git Command Line
+- Right click on project folder and select "Git Bash Here"
+
+![](GitBashHere.png)
+## Git Basics
+### Initialize A Repository
+- `git init`
+- Tells Git to generate all the files it will need in order to keep track of your project folder and its contents
+
+## Git Basics
+### Check Status
+- `git status`
+- What branch am I on? What is the status of the files in my repository?
+
+## Git Basics
+### Add Files To The Staging Area
+- `git add [filename]` adds a specific file
+- `git add *.R` adds all R files in the project folder
+- `git add *` adds all files in the project folder
+- Tells Git to track changes to these files
+
+## Git Basics
+### Create a New Branch
+- `git branch`
+    - List current branches
+- `git branch [branch name]`
+    - Create new branch
+- `git checkout [branch name]`
+    - Switch to new branch
+
+## Git Basics
+### Commit changes
+- `git commit -m "[descriptive message]"`
+- Permanently records snapshots of staged files
+
+## Git Basics
+### Merge Branches
+- `git checkout master`
+    - Switch to master branch
+- `git merge [branch name]`
+    - Merge everything from a specific branch into the master branch
+- `git branch -d [branch name]`
+    - Delete old branch
+    
+## Git Basics
+### View Version History and Revert to Older Version
+- `git log`
+    - View version history for current branch
+- `git reset [commit]`
+    - Undoes commits after `[commit]` but leaves files as is
+- `git reset --hard [commit]`
+    - Undoes commits after `[commit]` and resets files to their state at that commit
+
+
+    
+## Git Basics
+### Rules of Thumb
+- One repository per project
+    - Good: MOJN_IU_CalibrationAnalysis
+    - Bad: MOJN_R_Code
+- Commit early and often
+- Use descriptive commit messages
+    - Your collaborators and future self will thank you!
+
+## References
+
+https://jahya.net/blog/git-vs-github/
+https://git-scm.com/doc
