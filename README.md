@@ -1,5 +1,5 @@
 # MOJN Learns Git / GitHub!
-Feel free to add your own repository to this organization and use it to practice and experiment as you learn.
+Feel free to add your own repository to the MOJNSandbox organization and use it to practice and try things out as you work through the online resources.
 
 ## Sarah's slides
 Suggestions for improvement are welcome! And it's good GitHub practice. Source code is Git_Github_Intro.Rmd.
