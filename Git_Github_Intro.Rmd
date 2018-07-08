@@ -33,23 +33,24 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Git and GitHub
 - GitHub
     - Website that hosts Git repositories
-    - Lots of great collaboration features
-    - Looks great on a resume!
+    - Great for collaboration
 
 ## Git Workflow
 - Start a new project
     - Initialize a local Git repository 
         - `git init`
-    - Add project files to your repository
+    - Add project files to the staging area
         - `git add [filename]`
         - Can create files before or after initializing repo
+    - Commit initial project files
+        - `git commit -m "Initial project files"`
 
 ## Git Workflow
 - Work on a project
     - Create a new branch
         - `git branch [branch name]`
         - `git checkout [branch name]`
-    - Work on project, stage files, commit changes, repeat 
+    - Work on project, stage changes, commit changes, repeat 
         - `git add [filename]`
         - `git commit -m "[descriptive message]"`
     - When the code works, merge with master branch 
@@ -75,12 +76,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Git Basics
 ### Add Files To The Staging Area
 - `git add [filename]` 
-    - adds a specific file
+    - stages a specific file
 - `git add *.R` 
-    - adds all R files in the project folder
+    - stages all R files in the project folder
 - `git add *`
-    - adds all files in the project folder
-- Tells Git to track changes to these files
+    - stages all files in the project folder
+- Tells Git to include changes to these files in the next commit
 
 ## Git Basics
 ### Create a New Branch
@@ -94,7 +95,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Git Basics
 ### Commit changes
 - `git commit -m "[descriptive message]"`
-- Permanently records snapshots of staged files
+- Record a snapshot of staged files
 
 ## Git Basics
 ### Merge Branches
@@ -103,16 +104,20 @@ knitr::opts_chunk$set(echo = FALSE)
 - `git merge [branch name]`
     - Merge everything from a specific branch into the master branch
 - `git branch -d [branch name]`
-    - Delete old branch
+    - Delete old branches when you're done with them
     
 ## Git Basics
 ### View Version History and Revert to Older Version
 - `git log`
-    - View version history for current branch
-- `git reset [commit]`
-    - Undoes commits after `[commit]` but leaves files as is
-- `git reset --hard [commit]`
-    - Undoes commits after `[commit]` and resets files to their state at that commit
+    - View commit history for current branch
+- `git checkout [commit]`
+    - Set the working directory to its state at `[commit]`
+    - When you checkout a commit, you are no longer on a branch, so commits you make from here will not be saved!
+
+## Git Basics
+### Undo a Commit
+- `git revert [commit]`
+    - Create a new commit that undoes the specified commit
 
 ## GitHub Workflow
 - Start a new project
@@ -125,8 +130,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Work on a project
     - Incorporate changes made by others into your local repository
     - Work in your local repository as usual
-    - Frequently push changes to GitHub
-        - At minimum, push changes when you finish up for the day
+    - Push your work to GitHub
 
 ## GitHub Basics
 ### Create a GitHub Repository
@@ -140,19 +144,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## GitHub Basics
 ### Push Local Changes to GitHub Repository
-- `git push origin master`
-    - Push changes in local master branch to GitHub
-- `git push origin --all`
-    - Push changes in all local branches to GitHub
 - `git push origin [branch name]`
     - Push changes in a specific branch to GitHub
     
 ## GitHub Basics
 ### Sync Local Repository with GitHub Repository
-- `git fetch origin`
-    - Download the history of the GitHub repository
-- `git merge origin/master`
-    - Merge changes made to the GitHub repository with the current local branch
+- `git checkout master; git pull`
+    - Checkout the local master branch, fetch the master branch from GitHub, and merge it into the current local branch
+    - This brings the local master branch up to date with the master branch on GitHub
+- `git checkout [feature branch]; git merge master`
+    - Merge the local master branch (now up to date with the remote master branch) into the local branch you are working in
+    - Now the branch you are working in is up to date with the local and remote master branches
 
 ## Rules of Thumb
 - One repository per project
@@ -169,3 +171,5 @@ https://jahya.net/blog/git-vs-github/
 https://git-scm.com/
 
 https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+https://www.atlassian.com/git/tutorials/what-is-version-control
