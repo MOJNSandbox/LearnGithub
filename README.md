@@ -17,8 +17,10 @@ Online resources for users who are new to Github (or just need a refresher). Lin
   - https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-pullrequest/
 - Working locally with GitHub Desktop
   - https://kirstiejane.github.io/friendly-github-intro/exercises/working-locally/
-- Interactive Git/GitHub command line practice (super helpful)
-  - https://try.github.io/levels/1/challenges/1
+  
+- Links to interactive command line practice, interactive GitHub practice, and useful reference materials
+  - http://try.github.io/
+  
 - Git/GitHub tutorial for beginners, using command line
   - Clear explanation of how to use Git to track changes locally and then push changes up to a shared Github repository
   - http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
