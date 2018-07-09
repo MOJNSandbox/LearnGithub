@@ -9,12 +9,15 @@ https://mojnsandbox.github.io/LearnGithub/Git_Github_Intro.html
 Online resources for users who are new to Github (or just need a refresher). Links are organized with GitHub basics first and Git commands later.
 - Intro to GitHub workflow
   - https://guides.github.com/introduction/flow/
+  
 - Hands-on GitHub practice
   - https://guides.github.com/activities/hello-world/
   - and/or: https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-repo/
     - When you create a repository, create it in the MOJNSandbox organization and name it [yourname]_hello_world
+    
 - Pull request practice
   - https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-pullrequest/
+  
 - Working locally with GitHub Desktop
   - https://kirstiejane.github.io/friendly-github-intro/exercises/working-locally/
   
@@ -22,14 +25,16 @@ Online resources for users who are new to Github (or just need a refresher). Lin
   - http://try.github.io/
   
 - Git/GitHub tutorial for beginners, using command line
-  - Clear explanation of how to use Git to track changes locally and then push changes up to a shared Github repository
   - http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+     - Clear explanation of how to use Git to track changes locally and then push changes up to a shared Github repository
+     
 - Interactive game for learning Git commands
   - https://learngitbranching.js.org/
   
 - General resources
   - https://kirstiejane.github.io/friendly-github-intro/
   - https://www.atlassian.com/git/tutorials/what-is-version-control
+    - Really nice reference for in-depth Git information
 
 - Cheat sheets
   - https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
