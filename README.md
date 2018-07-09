@@ -22,9 +22,12 @@ Online resources for users who are new to Github (or just need a refresher). Lin
 - Git/GitHub tutorial for beginners, using command line
   - Clear explanation of how to use Git to track changes locally and then push changes up to a shared Github repository
   - http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+- Interactive game for learning Git commands
+  - https://learngitbranching.js.org/
   
 - General resources
   - https://kirstiejane.github.io/friendly-github-intro/
+  - https://www.atlassian.com/git/tutorials/what-is-version-control
 
 - Cheat sheets
   - https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
