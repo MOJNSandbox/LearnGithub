@@ -39,6 +39,7 @@ To add a changed file to the staging area, type `git add [filename]`. You can do
 To actually save the snapshot, type `git commit -m '[your message here]'`. Your message should be brief but should indicate what was done.
 
 ### Branching
+To add a branch, first make sure you're on the branch you want to add to.  Then click the (purple) branch icon under the Git tabin R Studio.  Name the branch and tell it to "Sync branch with remote" (i.e., GitHub).
 
 ### Troubleshooting
 
