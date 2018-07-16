@@ -1,7 +1,5 @@
 ---
-title: "Version Control in RStudio"
-author: "Sarah Wright"
-date: "July 11, 2018"
+title: "Version Control Notes"
 output:
   html_document:
     theme: yeti
@@ -12,13 +10,87 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Getting Started {.tabset .tabset-pills}
+
+**Using Git at the command line**
+------------------------------------------
+### Broad Concept
+There are three places where Git keeps track of changes to your project: the working copy, the staging area, and the repository.
+
+#### The Working Copy
+This is where you make changes. It's just your normal project files -- nothing unfamiliar here.
+
+#### The Staging Area
+The cool thing about Git is that it lets you keep track of your changes in a series of snapshots, which you can go back and look at and undo if necessary. This is most useful when each snapshot represents a small number of changes that are closely related. That way, if you need to undo a snapshot, you won't be undoing other, unrelated work that you wanted to keep.
+This is where the staging area comes in. Things you put in the staging area will be part of a single snapshot. So, once you've made some changes in the working copy, you can pick and choose which changes belong together in a snapshot by staging just those changes. Once you've saved the snapshot, you can stage some other changes that belong in a separate snapshot, and so on until all of your changes are saved.
+
+#### The Repository
+The repository (saved history) in Git consists of a series of snapshots. Each snapshot represents a set of changes and stores information about who took the snapshot, which snapshot came before it, and a brief user-supplied message about what changes were made.
+
+### Getting Started
+To initialize a repository, right click on the folder containing your project and select **Git bash here** to open the Git command line. Type `git init` at the command line. This initializes an empty repository in your project folder.
+
+### Saving Changes
+To add a changed file to the staging area, type `git add [filename]`. You can do this for as many files as you would like to include in the next snapshot.
+
+To actually save the snapshot, type `git commit -m '[your message here]'`. Your message should be brief but should indicate what was done.
+
+### Branching
+
+### Troubleshooting
+
+**Using Git in RStudio**
+-----------------------------------------
+### Enabling Git
+
+#. Go to Tools -> Global Options -> Git/SVN
+#. Check the box next to **Enable version control interface for RStudio projects**
+#. Under **Git executable**, provide the path to your computer's Git installation (probably C:/Program Files/Git/bin/git.exe)
+
+### Getting Started {.tabset .tabset-pills}
 
 Start from...
 
-### Existing R Project
+#### Scratch
 
-It's assumed that you are familiar with projects in RStudio; if not, go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link](**here**) for more information.
+#. Go to File -> New Project
+#. In the window that pops up, select **New Directory**
+#. Select **New Project**
+#. Pick a name for your project directory, and choose where it will be stored
+#. Make sure to check the box next to **Create a git repository**
+#. Click **Create Project**
 
-### Existing GitHub Repo
+#### Existing R Project
 
+Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link](**here**) for more information about projects in RStudio.
+
+#. Open the project in RStudio
+#. Go to Tools -> Project Options -> Git/SVN
+#. Set **Version control system:** to **Git**
+#. RStudio will ask if you want to initialize a new git repository; select **Yes**
+#. RStudio will say that it needs to restart to apply your changes; select **Yes**
+
+#### Existing GitHub Repo
+
+#. Go to File -> New Project
+#. In the window that pops up, select **Version Control**
+#. Select **Git**
+#. Enter the repository URL
+#. Pick a name for your project directory, and choose where it will be stored
+#. Click **Create Project**
+
+### Basic Git operations
+
+### Troubleshooting
+
+**Using GitHub**
+------------------------------------------
+
+### Getting Started {.tabset .tabset-pills}
+
+Start from...
+
+#### Existing Local Repo
+
+#### GitHub Repo - Your Project
+
+#### GitHub Repo - Someone Else's Project
