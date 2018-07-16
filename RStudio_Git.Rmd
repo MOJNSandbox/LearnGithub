@@ -4,6 +4,10 @@ output:
   html_document:
     theme: yeti
     highlight: default
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: no
 ---
 
 ```{r setup, include=FALSE}
