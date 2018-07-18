@@ -42,6 +42,7 @@ To actually save the snapshot, type `git commit -m '[your message here]'`. Your 
 To add a branch, first make sure you're on the branch you want to add to.  Then click the (purple) branch icon under the Git tabin R Studio.  Name the branch and tell it to "Sync branch with remote" (i.e., GitHub).
 
 ### Troubleshooting
+Put the trouble in a bubble.
 
 **Using Git in RStudio**
 -----------------------------------------
@@ -86,6 +87,7 @@ Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link
 ### Basic Git operations
 
 ### Troubleshooting
+Bring the trouble down to rubble.
 
 **Using GitHub**
 ------------------------------------------
