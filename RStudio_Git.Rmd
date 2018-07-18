@@ -46,6 +46,8 @@ To make a new branch, type `git branch [name of branch]`. To work from that bran
 
 ### Undoing a Commit
 
+### Troubleshooting
+Put the trouble in a bubble.
 
 **Using Git in RStudio**
 -----------------------------------------
@@ -109,7 +111,9 @@ git push    |
 git pull    |
 
 ### Troubleshooting
-If you have issues, ask Sarah for some tissues. 
+If you have issues, ask Sarah for some tissues. If that doesn't work:
+
+Bring the trouble down to rubble.
 
 **Using GitHub**
 ------------------------------------------
