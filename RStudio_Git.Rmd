@@ -87,7 +87,19 @@ Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link
 #. Pick a name for your project directory, and choose where it will be stored
 #. Click **Create Project**
 
-### Basic Git operations
+### Basic Git operations in RStudio
+
+#### Staging Changes
+
+#### Committing
+
+#### Branching
+
+#### Pulling from GitHub
+
+#### Pushing to GitHub
+
+#### View Commit History
 
 ### Troubleshooting
 
