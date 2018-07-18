@@ -93,6 +93,7 @@ git push    |
 git pull    |
 
 ### Troubleshooting
+If you have issues, ask Sarah for some tissues. 
 
 **Using GitHub**
 ------------------------------------------
