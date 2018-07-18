@@ -18,28 +18,33 @@ knitr::opts_chunk$set(echo = TRUE)
 **Using Git at the command line**
 ------------------------------------------
 ### Broad Concept
+Git is a version control system that allows you to take "snapshots" of your code (and other text-based documents). Think of it like having an undo button where you pick the undo points. As well, Git allows you to work from multiple *branches*. Without a version control system, you might make a copy of a file in order to try out an idea that could work but might just mess things up. This can get out of control pretty quickly and makes for a lot of copy-pasting (and a lot of confusion when you're trying to figure out which file is the master version). With Git, you always keep a single set of project files, and create a new branch when you want to try out some changes. You can go back to your original branch if the changes don't work out, and you can *merge* the new branch into the original branch if you want to keep your changes.
+
 There are three places where Git keeps track of changes to your project: the working copy, the staging area, and the repository.
 
 #### The Working Copy
-This is where you make changes. It's just your normal project files -- nothing unfamiliar here.
+This is where you make changes. It's just your normal project files that are stored on your hard drive.
 
 #### The Staging Area
 The cool thing about Git is that it lets you keep track of your changes in a series of snapshots, which you can go back and look at and undo if necessary. This is most useful when each snapshot represents a small number of changes that are closely related. That way, if you need to undo a snapshot, you won't be undoing other, unrelated work that you wanted to keep.
 This is where the staging area comes in. Things you put in the staging area will be part of a single snapshot. So, once you've made some changes in the working copy, you can pick and choose which changes belong together in a snapshot by staging just those changes. Once you've saved the snapshot, you can stage some other changes that belong in a separate snapshot, and so on until all of your changes are saved.
 
 #### The Repository
-The repository (saved history) in Git consists of a series of snapshots. Each snapshot represents a set of changes and stores information about who took the snapshot, which snapshot came before it, and a brief user-supplied message about what changes were made.
+The repository (saved history) in Git consists of a series of snapshots, called *commits*. Each commit represents a set of changes and stores information about who made the commit, which commit came before it, and a brief user-supplied message about what changes were made.
 
 ### Getting Started
 To initialize a repository, right click on the folder containing your project and select **Git bash here** to open the Git command line. Type `git init` at the command line. This initializes an empty repository in your project folder.
 
 ### Saving Changes
-To add a changed file to the staging area, type `git add [filename]`. You can do this for as many files as you would like to include in the next snapshot.
+To add a changed file to the staging area, type `git add [filename]`. You can do this for as many files as you would like to include in the next commit.
 
-To actually save the snapshot, type `git commit -m '[your message here]'`. Your message should be brief but should indicate what was done.
+To actually make a commit, type `git commit -m '[your message here]'`. Your message should be brief but should indicate what was done.
 
 ### Branching
-To add a branch, first make sure you're on the branch you want to add to.  Then click the (purple) branch icon under the Git tabin R Studio.  Name the branch and tell it to "Sync branch with remote" (i.e., GitHub).
+Make a new branch any time you start working on a new section of your project or when you're about to try a new approach that you may or may not end up sticking with.
+To make a new branch, type `git branch [name of branch]`. To work from that branch, you need to *check it out* by typing `git checkout [name of branch]`.
+
+### Undoing a Commit
 
 ### Troubleshooting
 Put the trouble in a bubble.
@@ -84,7 +89,19 @@ Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link
 #. Pick a name for your project directory, and choose where it will be stored
 #. Click **Create Project**
 
-### Basic Git operations
+### Basic Git operations in RStudio
+
+#### Staging Changes
+
+#### Committing
+
+#### Branching
+
+#### Pulling from GitHub
+
+#### Pushing to GitHub
+
+#### View Commit History
 
 ### Troubleshooting
 Bring the trouble down to rubble.
@@ -101,3 +118,16 @@ Start from...
 #### GitHub Repo - Your Project
 
 #### GitHub Repo - Someone Else's Project
+
+### Staging Changes
+
+### Committing
+
+### Branching
+To add a branch, first make sure you're on the branch you want to add to. Then click the (purple) branch icon under the Git tab in R Studio.  Name the branch and tell it to "Sync branch with remote" (i.e., GitHub).
+
+### Syncing with GitHub
+
+#### Share Your Work to GitHub
+
+#### Incorporate Changes Made by Others
