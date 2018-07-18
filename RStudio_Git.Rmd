@@ -115,3 +115,16 @@ Start from...
 #### GitHub Repo - Your Project
 
 #### GitHub Repo - Someone Else's Project
+
+### Staging Changes
+
+### Committing
+
+### Branching
+To add a branch, first make sure you're on the branch you want to add to. Then click the (purple) branch icon under the Git tab in R Studio.  Name the branch and tell it to "Sync branch with remote" (i.e., GitHub).
+
+### Syncing with GitHub
+
+#### Share Your Work to GitHub
+
+#### Incorporate Changes Made by Others
