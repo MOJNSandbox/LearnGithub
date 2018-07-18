@@ -103,7 +103,16 @@ Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link
 
 #### View Commit History
 
+Command     | Response
+------------| -------------
+git add     |Puts current working files into the stage 
+git commit  |Commits staged changes to a local branch
+git push    |
+git pull    |
+
 ### Troubleshooting
+If you have issues, ask Sarah for some tissues. If that doesn't work:
+
 Bring the trouble down to rubble.
 
 **Using GitHub**
@@ -114,6 +123,8 @@ Bring the trouble down to rubble.
 Start from...
 
 #### Existing Local Repo
+
+Specify your local working directory....
 
 #### GitHub Repo - Your Project
 
