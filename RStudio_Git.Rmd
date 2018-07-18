@@ -103,6 +103,8 @@ Start from...
 
 #### Existing Local Repo
 
+Specify your local working directory....
+
 #### GitHub Repo - Your Project
 
 #### GitHub Repo - Someone Else's Project
