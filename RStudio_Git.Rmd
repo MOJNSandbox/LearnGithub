@@ -85,6 +85,13 @@ Go <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>[link
 
 ### Basic Git operations
 
+Command     | Response
+------------| -------------
+git add     |Puts current working files into the stage 
+git commit  |Commits staged changes to a local branch
+git push    |
+git pull    |
+
 ### Troubleshooting
 
 **Using GitHub**
